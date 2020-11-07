@@ -32,13 +32,15 @@
     render() {
         return (
             <div className="taskGenerator">
-                <div>
+                <div className="task_div">
+                    <div>
+                        <input type="text" className="form__input" id="name" placeholder="Enter frameworks separated via comma"
+                            required="" onChange={this.handleInputChange.bind(this)} />
+                        <label htmlFor="name" className="form__label">Enter frameworks separated via comma</label>
+                    </div>
                     <button onClick={this.sendRequest.bind(this)} className="btn">
                         Click
                     </button>
-                    <input type="text" className="form__input" id="name" placeholder="Enter frameworks separated via comma"
-                        required="" onChange={this.handleInputChange.bind(this)} />
-                    <label htmlFor="name" className="form__label">Enter frameworks separated via comma</label>
                 </div>
                 <p>{this.state.result}</p>
             </div>

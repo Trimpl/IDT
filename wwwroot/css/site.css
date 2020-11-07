@@ -113,6 +113,7 @@ body {
 .taskGenerator {
   margin-top: 50px;
   text-align: center;
+  align-items: center;
 }
 
 .taskGenerator p {
@@ -154,7 +155,6 @@ body {
 }
 
 .btn {
-  position: absolute;
   margin-left: 13%;
   background: #222;
   height: 36px;
@@ -171,4 +171,10 @@ body {
 
 .btn:hover {
   background: transparent;
+}
+
+.task_div {
+  margin-left: 40%;
+  display: grid;
+  grid-template-columns: 395px 50px;
 }
